@@ -65,4 +65,37 @@ li{
 .container{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
+.image-container{
+	width: 80%;
+}
+.image-container img{
+	object-fit: cover;
+	width: 100%;
+	height: 78vh;
+}
+.image-slider{
+	width: 80%;
+	height: 100px;
+	object-fit: contain;
+	overflow: hidden;
+}
+.thumbnail{
+	display: flex;
+}
+.thumbnail img{
+	width: 90%;
+	height: 100%;
+	text-align: left;
+	object-fit: cover;
+}
+.thumb-image{
+	width: 25%;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
