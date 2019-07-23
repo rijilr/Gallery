@@ -1,7 +1,7 @@
 const displayedImage = document.querySelector(".displayed-image");
 const thumbBar = document.querySelector(".thumbnail");
 
-for(var i = 1; i <= 8; i++) {
+for(var i = 1; i <= 9; i++) {
     var divImage = document.createElement('div')
     divImage.className = "thumb-image";
     var newImage = document.createElement('img');
