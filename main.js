@@ -3,7 +3,7 @@ const thumbBar = document.querySelector(".thumbnail");
 
 for(var i = 1; i <= 8; i++) {
     var divImage = document.createElement('div')
-    divImage.className = "thumb-image fade";
+    divImage.className = "thumb-image";
     var newImage = document.createElement('img');
     var imageLocation='img/pics/pic' + i + '.jpg';
     newImage.setAttribute('src', 'img/pics/pic' + i + '.jpg');
@@ -17,3 +17,4 @@ for(var i = 1; i <= 8; i++) {
 function displayImage(imgSrc) {
     displayedImage.setAttribute('src', imgSrc);
   }
+
