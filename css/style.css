@@ -46,41 +46,41 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.card-panel{
-	font-family: 'Roboto';
+.header-container{
+	font-family: 'Ubuntu';
 	margin: 0% 5%;
-	padding: 1% 1%;
+	padding: 0% 1%;
 	box-shadow: 1px 5px 5px #888888;
+	border: #26a69a solid 12px;
 }
 h1{
 	font: bolder 36px Ubuntu;
 	color: #006354;
+	font-size: 40px;
+	margin: 0;
 }
-.card-panel img{
+.header-container img{
 	max-width: 8%;
+	 
 }
-ul{
+.header-wrapper ul, li{
 	color: #008C7F;
-	padding: 1.5% 3%;
 	display: flex;
+	margin:0 ;
+	border: none;
 }
 li{
-	padding-left: 3%;
 	white-space:nowrap;
 }
-.container{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
 .image-container{
-	width: 80%;
+	padding: 1% 10%;
 }
 .image-container img{
 	object-fit: contain;
 	width: 100%;
-	height: 78vh;
+	height: 34rem;
 	padding: 2% 0%;
+	background-color: black;
 }
 .image-slider{
 	width: 80%;
@@ -90,22 +90,23 @@ li{
 }
 .thumbnail{
 	display: flex;
-	flex-wrap: nowrap;
-	overflow: scroll;
-	overflow-y: hidden;
+    justify-content: start;
+    max-height: 120px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .thumbnail img{
-	width: 90%;
-	height: 100%;
-	text-align: left;
-	object-fit: cover;
-	opacity: 0.9;
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+	padding: 0% 1% 5% 0%;
+    margin: 7% 1% 0% 5%;
 }
 .thumb-image{
-	flex: 1 0 auto;
-	width: 15%;
-	transition: 0.6s ease;
+	width: 14%;
 }
 .container{
 	width:80%;
@@ -114,6 +115,8 @@ li{
 footer h2{
 	text-align: center;
 	padding: 10% 0%;
+	font-size: 16px;
+	margin: 0;
 }
 .header-wrapper{
 	display: flex;
@@ -121,8 +124,13 @@ footer h2{
 }
 header a{
 	text-decoration: none;
+	color: #006354;
 	display: flex;
 }
 .thumbnail img:hover{
 	opacity: 1;
+}    
+.upload-image{
+	text-align: center;
+	padding-top: 5%;
 }
